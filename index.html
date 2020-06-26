@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charest="UTF=8">
         <title>맛있는 학교생활</title>
-        <meta charest="utf-8">
         <style>
-            body {background-color: lightblue;}
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                }
+            li {
+                float: left;
+                }
+                    
+            li a {
+                display: block;
+                color: white;   
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+                        
+            li a:hover:not(.active) {
+                background-color: #111;
+                }
+                    
+            .active {
+                background-color: #f3db51;
+                }
         </style>
     </head>
     <body>
-        <h1>맛있는 학교생활</h1>
+
         <ul>
-            <li>Home</li>
-            <li>아침</li>
-            <li>점심</li>
-            <li>저녁</li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="아침.html">아침</a></li>
+            <li><a href="점심.html">점심</a></li>
+            <li><a href="저녁.html">저녁</a></li>
         </ul>
-        학교 근처 먹을거리를 소개하기 위해 제작
+        <br />
+        학교 근처 먹을거리를 소개하기 위해 제작<br />
+        <img src="./image/청운대로고.jpg" alt="청운대"/><br />
     </body>
 </html>
